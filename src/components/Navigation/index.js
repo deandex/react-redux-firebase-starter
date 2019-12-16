@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { Link, useHistory, useRouteMatch, useLocation } from 'react-router-dom';
+import { Link, useHistory, useRouteMatch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Dropdown, Nav } from 'react-bootstrap';
 
 import * as routes from '../../constants/routes';
 import { FirebaseContext } from '../Firebase';
 
-import FundraLogo from '../../assets/svg/logo-Fundra.svg';
+import DeansoftLogo from '../../assets/images/logo.png';
 import SearchIcon from '../../assets/svg/search-slim.svg';
 import NotificationIcon from '../../assets/svg/notifications-outline.svg';
 import CheveronDownIcon from '../../assets/svg/cheveron-down.svg';
@@ -50,10 +50,9 @@ CustomToggle.propTypes = {
 const NavigationAuth = ({ authUser }) => {
   const firebase = useContext(FirebaseContext);
   const history = useHistory();
-  const { displayName, firstName, lastName, photo, avatar, agency } = authUser;
+  const { displayName, firstName, lastName, photo, avatar } = authUser;
   const firstInitial = firstName.substring(0, 1);
   const lastInitial = lastName.substring(0, 1);
-  const agencyLogo = agency && agency.img && agency.img.logo ? agency.img.logo : null;
   let userPhoto = avatar || null;
 
   if (!userPhoto && photo) {
@@ -71,14 +70,7 @@ const NavigationAuth = ({ authUser }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white navbar-top fixed-top">
       <Link className="navbar-brand" to={routes.LANDING}>
-        {agencyLogo ? (
-          <div className="d-flex align-items-center">
-            <div className="brand-logo" style={{ backgroundImage: `url("${agencyLogo}")` }} />
-            <div className="brand-name text-fundra-base">{agency.name}</div>
-          </div>
-        ) : (
-          <img src={FundraLogo} alt="Logo" />
-        )}
+        <img src={DeansoftLogo} alt="Logo" />
       </Link>
       <button
         className="navbar-toggler"
@@ -122,13 +114,9 @@ const NavigationAuth = ({ authUser }) => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item eventKey={routes.CAMPAIGNS} onSelect={handleRedirect}>
-                Campaigns Management
-              </Dropdown.Item>
-              <Dropdown.Item eventKey={routes.DONORS} onSelect={handleRedirect}>
+              <Dropdown.Item eventKey="#test" onSelect={handleRedirect}>
                 Donor Management
               </Dropdown.Item>
-              <Dropdown.Item eventKey="3">Financial Management</Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item eventKey={routes.ACCOUNT} onSelect={handleRedirect}>
                 My Account
@@ -160,27 +148,7 @@ const AccountNav = () => {
         <Nav.Link eventKey={routes.ACCOUNT}>My Account</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey={routes.NONPROFIT}>Nonprofit</Nav.Link>
-      </Nav.Item>
-    </Nav>
-  );
-};
-
-const CampaignNav = () => {
-  const location = useLocation();
-  const history = useHistory();
-
-  const handleOnSelect = selectedKey => {
-    history.push(selectedKey);
-  };
-
-  return (
-    <Nav fill activeKey={location.pathname} onSelect={handleOnSelect} className="page-navbar">
-      <Nav.Item>
-        <Nav.Link eventKey={routes.CAMPAIGNS}>My Campaigns</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey={routes.CAMPAIGNS_METRICS}>Metrics</Nav.Link>
+        <Nav.Link eventKey="#test">Test</Nav.Link>
       </Nav.Item>
     </Nav>
   );
@@ -192,4 +160,4 @@ const mapStateToProps = state => ({
 
 export default connect(mapStateToProps)(Navigation);
 
-export { AccountNav, CampaignNav };
+export { AccountNav };

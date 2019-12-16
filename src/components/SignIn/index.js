@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import { compose } from 'recompose';
 
 import * as ROUTES from '../../constants/routes';
-import { MSG_PROFILE_NO_AGENCY } from '../../constants/messages';
 import { FirebaseContext } from '../Firebase';
 
 import { setSuccessAction, clearSuccessAction, setErrorAction, clearErrorAction } from '../../actions/core';
@@ -15,13 +14,13 @@ import { SignInGoogle, SignInFacebook } from '../Social';
 import { SignUpLink } from '../SignUp';
 import { PasswordForgetLink } from '../PasswordForget';
 
-import { ReactComponent as FundraLogo } from '../../assets/svg/logo-Fundra.svg';
+import DeansoftLogo from '../../assets/images/logo.png';
 
 const SignInPage = () => (
   <>
     <SEO title="Signin" />
     <div className="login-container w-50 mx-auto text-center">
-      <FundraLogo className="login-logo" />
+      <img src={DeansoftLogo} className="login-logo" alt="" />
       <div className="login-header mt-4">
         <h1>Welcome back</h1>
         <div className="login-note text-fundra-secondary">Just one minute away from experiencing Fundra!</div>
@@ -90,10 +89,6 @@ const SignInFormBase = ({ history, onSetSuccess, onClearSuccess, onSetError, onC
           });
           setIsSendActivationEmail(true);
           doResetForm();
-        } else if (!authUserProfile.agency) {
-          firebase.userProvider.doSignOut();
-          doResetForm();
-          onSetError(MSG_PROFILE_NO_AGENCY);
         } else {
           history.push(ROUTES.LANDING);
         }

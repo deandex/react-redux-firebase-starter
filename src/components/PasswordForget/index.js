@@ -13,13 +13,13 @@ import SEO from '../Seo';
 import { SignUpLink } from '../SignUp';
 import { SignInFacebook, SignInGoogle } from '../Social';
 
-import { ReactComponent as FundraLogo } from '../../assets/svg/logo-Fundra.svg';
+import DeansoftLogo from '../../assets/images/logo.png';
 
 const PasswordForgetPage = () => (
   <>
     <SEO title="Forgot Password" />
     <div className="login-container w-75 mx-auto text-center">
-      <FundraLogo className="login-logo" />
+      <img src={DeansoftLogo} className="login-logo" alt="" />
       <div className="login-header mt-4">
         <h1>Forgot Password</h1>
         <div className="login-note text-fundra-secondary">

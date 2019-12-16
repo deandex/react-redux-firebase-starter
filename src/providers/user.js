@@ -147,18 +147,6 @@ class UserProvider {
 
     await this.auth.currentUser.updateProfile({ displayName: `${firstName} ${lastName}` });
 
-    const stripeData = {
-      email,
-      description: `Customer for ${email}`,
-      metadata: {
-        'first name': firstName,
-        'last name': lastName,
-        uid,
-        phone,
-        currency: 'USD',
-      },
-    };
-
     const token = Math.random()
       .toString(36)
       .slice(-8);
@@ -184,18 +172,6 @@ class UserProvider {
   doRegisterSocialProfile = async authUser => {
     const { uid } = authUser;
     const fullName = authUser.displayName.split(' ');
-    const stripeData = {
-      email: authUser.email,
-      description: `Customer for ${authUser.email}`,
-      metadata: {
-        'first name': fullName[0],
-        'last name': fullName[1] ? fullName[1] : '',
-        uid,
-        phone: '',
-        currency: 'USD',
-      },
-    };
-
     const userProfile = {
       uid,
       firstName: fullName[0],

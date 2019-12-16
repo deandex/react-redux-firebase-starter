@@ -85,7 +85,7 @@ const Landing = ({ authUser }) => {
             </div>
             <div className="row menu-item-body fundraise-business">
               <div className="col-md-3 item-menu-icon">
-                <Link to={routes.CAMPAIGNS}>
+                <Link to={routes.LANDING}>
                   <img src={MetricsSubMenuIcon} alt="" className="menu-icon" />
                   <div className="menu-title">Campaigns Management</div>
                   <img src={CheveronRightIcon} alt="" className="icon-next" />
@@ -99,7 +99,7 @@ const Landing = ({ authUser }) => {
                 </Link>
               </div>
               <div className="col-md-3 item-menu-icon">
-                <Link to={routes.DONORS}>
+                <Link to={routes.LANDING}>
                   <img src={DonorsSubMenuIcon} alt="" className="menu-icon" />
                   <div className="menu-title">Donors Management</div>
                   <img src={CheveronRightIcon} alt="" className="icon-next" />

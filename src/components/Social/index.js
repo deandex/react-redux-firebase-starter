@@ -6,7 +6,6 @@ import { compose } from 'recompose';
 
 import { FirebaseContext } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
-import { MSG_PROFILE_NO_AGENCY } from '../../constants/messages';
 
 import { setSuccessAction, clearSuccessAction, setErrorAction, clearErrorAction } from '../../actions/core';
 
@@ -24,13 +23,8 @@ const SignInGoogleBase = ({ caption, history, onSetError, onClearError }) => {
       .then(socialAuthUser => {
         return firebase.userProvider.doVerifySocialUser(socialAuthUser.user);
       })
-      .then(authUserProfile => {
-        if (!authUserProfile.agency) {
-          firebase.userProvider.doSignOut();
-          onSetError(MSG_PROFILE_NO_AGENCY);
-        } else {
-          history.push(ROUTES.LANDING);
-        }
+      .then(() => {
+        history.push(ROUTES.LANDING);
       })
       .catch(err => {
         onSetError(err.message);
@@ -70,13 +64,8 @@ const SignInFacebookBase = ({ caption, history, onSetError, onClearError }) => {
               return firebase.userProvider.doVerifySocialUser(socialAuthUser.user);
             });
           })
-          .then(authUserProfile => {
-            if (!authUserProfile.agency) {
-              firebase.userProvider.doSignOut();
-              onSetError(MSG_PROFILE_NO_AGENCY);
-            } else {
-              history.push(ROUTES.LANDING);
-            }
+          .then(() => {
+            history.push(ROUTES.LANDING);
           })
           .catch(err => {
             onSetError(err.message);
@@ -93,13 +82,8 @@ const SignInFacebookBase = ({ caption, history, onSetError, onClearError }) => {
       .then(socialAuthUser => {
         return firebase.userProvider.doVerifySocialUser(socialAuthUser.user);
       })
-      .then(authUserProfile => {
-        if (!authUserProfile.agency) {
-          firebase.userProvider.doSignOut();
-          onSetError(MSG_PROFILE_NO_AGENCY);
-        } else {
-          history.push(ROUTES.LANDING);
-        }
+      .then(() => {
+        history.push(ROUTES.LANDING);
       })
       .catch(err => {
         if (err.code === 'auth/account-exists-with-different-credential') {

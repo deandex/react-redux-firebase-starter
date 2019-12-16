@@ -7,7 +7,6 @@ import * as ROUTES from '../../constants/routes';
 import { FirebaseContext } from '../Firebase';
 
 import { clearAuthUserAction } from '../../actions/authUser';
-import { clearNonprofitAction, clearCategoriesAction } from '../../actions/nonprofit';
 
 const withAuthorization = condition => Component => {
   class WithAuthorization extends React.Component {
@@ -28,11 +27,9 @@ const withAuthorization = condition => Component => {
     }
 
     clearAllState() {
-      const { history, onClearAuthUser, onClearNonprofit, onClearCategories } = this.props;
+      const { history, onClearAuthUser } = this.props;
       localStorage.removeItem('fundra-profile');
       onClearAuthUser();
-      onClearNonprofit();
-      onClearCategories();
 
       history.push(ROUTES.SIGN_IN);
     }
@@ -50,8 +47,6 @@ const withAuthorization = condition => Component => {
     authUser: PropTypes.instanceOf(Object),
     history: PropTypes.instanceOf(Object).isRequired,
     onClearAuthUser: PropTypes.func.isRequired,
-    onClearNonprofit: PropTypes.func.isRequired,
-    onClearCategories: PropTypes.func.isRequired,
   };
   WithAuthorization.defaultProps = { authUser: null };
 
@@ -61,8 +56,6 @@ const withAuthorization = condition => Component => {
 
   const mapDispatchToProps = dispatch => ({
     onClearAuthUser: () => dispatch(clearAuthUserAction()),
-    onClearNonprofit: () => dispatch(clearNonprofitAction()),
-    onClearCategories: () => dispatch(clearCategoriesAction()),
   });
 
   return connect(mapStateToProps, mapDispatchToProps)(WithAuthorization);

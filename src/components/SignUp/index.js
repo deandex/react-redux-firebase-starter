@@ -12,13 +12,13 @@ import { setSuccessAction, clearSuccessAction, setErrorAction, clearErrorAction 
 import SEO from '../Seo';
 import { SignInGoogle, SignInFacebook } from '../Social';
 
-import { ReactComponent as FundraLogo } from '../../assets/svg/logo-Fundra.svg';
+import DeansoftLogo from '../../assets/images/logo.png';
 
 const SignUpPage = () => (
   <>
     <SEO title="Signup" />
     <div className="login-container w-50 mx-auto text-center">
-      <FundraLogo className="login-logo" />
+      <img src={DeansoftLogo} className="login-logo" alt="" />
       <div className="login-header mt-4">
         <h1>Get Started</h1>
         <div className="login-note text-fundra-secondary">Just one minute away from experiencing Fundra!</div>

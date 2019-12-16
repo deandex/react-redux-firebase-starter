@@ -1,7 +1,7 @@
 .user-initial {
   margin-right: 16px;
   border-radius: 50%;
-  background-color: $fundra-bg-warning;
+  background-color: $deansoft-bg-warning;
   color: theme-color('fundra-warning') !important;
   font-weight: 500;
 }
@@ -51,7 +51,7 @@
           justify-content: center;
 
   &.facebook {
-    background-color: $fundra-bg-facebook;
+    background-color: $deansoft-bg-facebook;
     margin-bottom: 10px;
   }
 
@@ -389,7 +389,7 @@
       color: theme-color('fundra-primary');
       font-weight: 500;
       border-radius: 4px;
-      background-color: $fundra-bg-info;
+      background-color: $deansoft-bg-info;
     }
   }
 }
