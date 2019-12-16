@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="318px" height="162px" viewBox="0 0 318 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Pic</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="318" height="161.968"></rect>
+        <polygon id="path-3" points="12.2775194 44.8780488 0.023255814 44.8780488 0.023255814 0.324930989 12.2775194 0.324930989 24.5317829 0.324930989 24.5317829 44.8780488"></polygon>
+    </defs>
+    <g id="Symbol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Campaigns/Empty-state-no-photo-no-goal" transform="translate(-1.000000, -78.000000)">
+            <g id="Pic" transform="translate(1.000000, 78.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#EDF0F6" xlink:href="#path-1"></use>
+                <g id="Sign" opacity="0.300000012" mask="url(#mask-2)">
+                    <g transform="translate(147.000000, 59.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-7" stroke="none" fill="none"></g>
+                        <polyline id="Fill-8" stroke="none" fill="#70788A" fill-rule="evenodd" mask="url(#mask-4)" points="12.3848837 44.8780488 0 37.6832974 0 8.02099452 12.3848837 0.324930989 0 8.02099452 12.3848837 14.3898506 12.3848837 20.8488107 0 28.5445264 12.3848837 34.9137304 12.3848837 44.8780488"></polyline>
+                        <polyline id="Fill-9" stroke="none" fill="#C3CFE2" fill-rule="evenodd" mask="url(#mask-4)" points="12.3848837 14.3898506 12.3848837 0.324930989 24.5317829 8.02099452 12.3848837 14.3898506"></polyline>
+                        <polyline id="Fill-10" stroke="none" fill="#7E889C" fill-rule="evenodd" mask="url(#mask-4)" points="12.3848837 14.3898506 0 8.02099452 12.3848837 0.324930989 12.3848837 14.3898506"></polyline>
+                        <polyline id="Fill-11" stroke="none" fill="#C3CFE2" fill-rule="evenodd" mask="url(#mask-4)" points="12.3848837 34.9137304 12.3848837 20.8488107 24.5317829 28.5445264 12.3848837 34.9137304"></polyline>
+                        <polyline id="Fill-12" stroke="none" fill="#7E889C" fill-rule="evenodd" mask="url(#mask-4)" points="12.3848837 34.9137304 0 28.5445264 12.3848837 20.8488107 12.3848837 34.9137304"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

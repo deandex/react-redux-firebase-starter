@@ -1,0 +1,190 @@
+.svg-fill-logo {
+  fill: currentColor;
+}
+
+.svg-stroke-logo {
+  stroke: currentColor;
+}
+
+.svg-fill-logo, .svg-stroke-logo {
+  margin-right: 8px;
+}
+
+.heading-with-line {
+  color: $dark-blue;
+  text-align: center;
+  padding-right: 11px;
+  position: relative;
+
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: .5px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: $white;
+    margin-bottom: 0;
+  }
+
+  &.full {
+    padding-right: 11px;
+
+    &:after {
+      right: 12px;
+    }
+  }
+
+  &.small {
+    padding-right: 0;
+
+    h2 {
+      font-size: 15px;
+    }
+
+    &:after {
+      right: 0;
+      top: 34px;
+    }
+  }
+
+  &:after {
+    content: ' ';
+    opacity: none;
+    position: absolute;
+    left: 0;
+    right: 11px;
+    top: 35px;
+    z-index: -9999999;
+    border-bottom: 2px solid $dark-blue;
+  }
+}
+
+.gray-box {
+  border: 1px solid $box-gray;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.file-upload-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+
+  .upload-link {
+    display: inline-block;
+    color: theme-color('fundra-primary');
+    text-decoration: none;
+    font-size: $font-size-base * .9;
+    font-weight: 500;
+
+    svg {
+      width: 12px;
+      height: 12px;
+      margin-bottom: 2px;
+      margin-right: 5px;
+    }
+  }
+
+  input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+  }
+}
+
+.form-group > {
+  label {
+    font-weight: 500;
+    letter-spacing: .5px;
+  }
+
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+
+  .input-group {
+    .currency-input {
+      -moz-appearance: textfield;
+      &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.table-gray {
+  width: 100%;
+
+  th {
+    padding: 8px 20px;
+    background-color: $table-color;
+    text-transform: uppercase;
+    font-size: $font-size-base * 0.86;
+  }
+
+  tr {
+    border-bottom: 1px solid $table-line;
+  }
+
+  td {
+    padding: 10px 20px;
+    vertical-align: top;
+
+    &.action {
+      width: 100px;
+
+      button {
+        outline: none;
+        border: none;
+        background: none;
+        padding: 0;
+
+        &:first-of-type {
+          padding-right: 7px;
+        }
+      }
+    }
+  }
+}
+
+.submit-button-modal {
+  .spinner-border {
+    margin-right: 8px;
+    margin-bottom: 2px;
+  }
+}
+
+.alert-swal {
+  font-size: $font-size-base;
+}
+
+.swal-title {
+  font-size: $font-size-base * 1.5;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+  margin-top: 5px!important;
+  margin-bottom: 28px!important;
+}
+
+.swal-text {
+  text-align: center;
+  color: $body-color; //#61534e;
+  font-size: $font-size-base;
+}
+
+.swal-button {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.swal-footer {
+  background-color: rgb(245, 248, 250);
+  margin-top: 32px;
+  border-top: 1px solid #E9EEF1;
+  overflow: hidden;
+  text-align: center;
+}

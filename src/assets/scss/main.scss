@@ -1,0 +1,400 @@
+.user-initial {
+  margin-right: 16px;
+  border-radius: 50%;
+  background-color: $fundra-bg-warning;
+  color: theme-color('fundra-warning') !important;
+  font-weight: 500;
+}
+
+.user-avatar {
+  margin-right: 16px;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.social-button, .submit-button {
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  font-size: $font-size-base * 1.136;
+  font-weight: 500;
+  letter-spacing: .57px;
+
+  &:hover {
+    font-weight: 600;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.social-button {
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  &.facebook {
+    background-color: $fundra-bg-facebook;
+    margin-bottom: 10px;
+  }
+
+  &.google {
+    background-color: $white;
+    border: 1px solid theme-color("fundra-info");
+  }
+
+  &.facebook {
+    svg {
+      margin-right: 10px;
+      margin-bottom: 2px;
+    }
+  }
+
+  &.google {
+    svg {
+      margin-right: 11px;
+    }
+  }
+}
+
+.submit-button {
+  height: 40px;
+
+  &:disabled {
+    cursor: default;
+    background-color: $gray-300;
+  }
+
+  &.auth-button {
+    height: 50px;
+  }
+
+  .spinner-border {
+    margin-right: 8px;
+    margin-bottom: 2px;
+  }
+}
+
+.navbar-top {
+  padding: 20px 40px;
+  border-bottom: 0.5px solid $line-gray;
+
+  .navbar-brand {
+    outline: none;
+
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50%;
+      margin-right: 16px;
+    }
+
+    .brand-name {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .nav-link {
+    outline: none;
+
+    &.nav-icon {
+      width: 38px;
+      text-align: center;
+      margin-right: 0.25rem;
+
+      img {
+        width: 16px;
+      }
+
+      &:hover {
+        background-color: rgba(245, 166, 35, 0.2);
+        border-radius: 50px;
+      }
+    }
+  }
+
+  .nav-profile-menu {
+    .user-avatar, .user-initial {
+      width: 36px;
+      height: 36px;
+    }
+
+    .user-initial {
+      padding-left: 2px;
+    }
+
+    .label-name {
+      color: theme-color('fundra-black');
+      letter-spacing: .2px;
+      line-height: 17px;
+      padding: 0 16px 0 0;
+    }
+
+    .caret {
+      width: 16px;
+      height: 16px;
+    }
+
+    .dropdown-menu {
+      .dropdown-item {
+        outline: none;
+
+        &.danger {
+          color: #D0021B;
+          font-weight: 500;
+        }
+
+        &:hover {
+          color: theme-color('fundra-primary');
+          background-color: rgba(99,158,254,.16);
+        }
+      }
+    }
+  }
+}
+
+.main-container {
+  padding-top: $spacer * 7.5;
+}
+
+.login-container {
+  padding-top: $spacer * 2.25;
+  padding-bottom: $spacer * 2.25;
+
+  .login-logo {
+    width: 140px;
+    height: 45px;
+  }
+
+  .login-header {
+    h1 {
+      letter-spacing: 0.38px;
+    }
+
+    .login-note {
+      font-size: $font-size-base * 1.35;
+      letter-spacing: 0.65px;
+    }
+  }
+
+  .login-form {
+    width: 437px;
+    margin: 45px auto 0;
+
+    .form-group {
+      &.last {
+        margin-bottom: .5rem;
+      }
+    }
+  }
+
+  .forgot-link {
+    font-weight: 500;
+    letter-spacing: .5px;
+  }
+
+  .sign-up {
+    letter-spacing: .5px;
+
+    a {
+      font-weight: 500;
+    }
+  }
+}
+
+.dashboard-quote {
+  color: theme-color('fundra-black');
+  font-size: $font-size-base * 1.1;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.dashboard-menu {
+  padding-top: $spacer * 3.5;
+
+  .dashboard-menu-item {
+    height: 140px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    .menu-item-header {
+      height: 68px;
+      padding: 16px;
+      background-color: #FAFAFB;
+
+      .header-title {
+        display: inline-block;
+        margin-left: $spacer * 1.1;
+        font-size: $font-size-base * 1.3;
+        font-weight: 500;
+      }
+    }
+
+    .menu-item-body {
+      margin-right: 16px;
+      margin-left: 16px;
+
+      &.plan-business {
+        a {
+          &:hover {
+            background-color: #D1DFFB;
+          }
+        }
+      }
+
+      &.analyze-business {
+        a {
+          &:hover {
+            background-color: #F9EED2;
+          }
+        }
+      }
+
+      &.fundraise-business {
+        a {
+          &:hover {
+            background-color: #DEDCFB;
+          }
+        }
+      }
+
+      .item-menu-icon {
+        padding: 24px 0;
+
+        a {
+          padding: 7px 10px;
+          color: theme-color('fundra-black');
+          outline: none;
+
+          &:hover {
+            color: theme-color('fundra-black');
+            border-radius: 4px;
+          }
+        }
+
+        .menu-icon {
+          margin-bottom: $spacer * .1;
+        }
+
+        .menu-title {
+          display: inline-block;
+          margin-left: 12px;
+        }
+
+        .icon-next {
+          margin-left: 14px;
+          width: 18px;
+        }
+      }
+    }
+  }
+}
+
+.account-info {
+  .user-initial, .user-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .user-initial {
+    font-size: $font-size-base * 2.8;
+  }
+
+  .profile-name {
+    font-size: $font-size-base * 2.3;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .profile-location {
+    color: theme-color('fundra-black');
+  }
+}
+
+.page-navbar {
+  border-bottom: 1px solid $line-gray;
+
+  .nav-link {
+    outline: none;
+    color: theme-color('fundra-base');
+    letter-spacing: 0.4px;
+
+    &.active {
+      color: theme-color('fundra-primary');
+      font-weight: 500;
+      border-bottom: 2px solid theme-color('fundra-primary');
+    }
+
+    &.disabled {
+      color: #6c757d;
+    }
+  }
+}
+
+.avatar-preview {
+  -o-object-fit: cover;
+    object-fit: cover;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+.cover-preview {
+  -o-object-fit: cover;
+    object-fit: cover;
+  border-radius: 6px;
+  width: 70%;
+  min-height: 100px;
+  margin-right: 10px;
+
+  &.small {
+    width: 45%;
+  }
+
+  &.medium {
+    width: 60%;
+    max-height: 160px;
+  }
+}
+
+.page-left-nav {
+  border-right: 1px solid $box-gray;
+
+  .nav-link {
+    color: theme-color('fundra-base');
+    outline: none;
+
+    &.active {
+      color: theme-color('fundra-primary');
+      font-weight: 500;
+      border-radius: 4px;
+      background-color: $fundra-bg-info;
+    }
+  }
+}
+
+.footer {
+  letter-spacing: 0.1px;
+  border-top-color: rgba(126, 136, 156, .15)!important;
+}

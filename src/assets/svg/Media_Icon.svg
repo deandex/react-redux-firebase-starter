@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="55px" viewBox="0 0 55 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>7569EBD3-5F44-4189-A449-FDEEDD71CAA9</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="4.91100775 20 0.00930232558 20 0.00930232558 0.144806202 4.91100775 0.144806202 9.81271318 0.144806202 9.81271318 20"></polygon>
+    </defs>
+    <g id="Credentials" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Register-Nonprofit-01" transform="translate(-504.000000, -304.000000)">
+            <g id="Media-Icon" transform="translate(504.000000, 304.000000)">
+                <circle id="Oval-4" fill="#C3CFE2" opacity="0.24" cx="27.5" cy="27.5" r="27.5"></circle>
+                <g id="Sign" opacity="0.300000012" transform="translate(23.000000, 18.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-7"></g>
+                    <polyline id="Fill-8" fill="#70788A" mask="url(#mask-2)" points="4.95395349 20 0 16.7936434 0 3.57457364 4.95395349 0.144806202 0 3.57457364 4.95395349 6.41286822 4.95395349 9.29131783 0 12.7209302 4.95395349 15.5593798 4.95395349 20"></polyline>
+                    <polyline id="Fill-9" fill="#C3CFE2" mask="url(#mask-2)" points="4.95395349 6.41286822 4.95395349 0.144806202 9.81271318 3.57457364 4.95395349 6.41286822"></polyline>
+                    <polyline id="Fill-10" fill="#7E889C" mask="url(#mask-2)" points="4.95395349 6.41286822 0 3.57457364 4.95395349 0.144806202 4.95395349 6.41286822"></polyline>
+                    <polyline id="Fill-11" fill="#C3CFE2" mask="url(#mask-2)" points="4.95395349 15.5593798 4.95395349 9.29131783 9.81271318 12.7209302 4.95395349 15.5593798"></polyline>
+                    <polyline id="Fill-12" fill="#7E889C" mask="url(#mask-2)" points="4.95395349 15.5593798 0 12.7209302 4.95395349 9.29131783 4.95395349 15.5593798"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="19px" viewBox="0 0 16 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 58 (101010) - https://sketch.com -->
+    <title>8B397D79-DB78-4CF0-B2BF-139304BFE580</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="13.-Landing-page---Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.-Landing-page" transform="translate(-747.000000, -528.000000)">
+            <g id="Group-5" transform="translate(206.000000, 433.000000)">
+                <g id="Group-2-Copy-5" transform="translate(537.000000, 92.000000)">
+                    <g id="Icon-/-24px-/-Operational">
+                        <rect id="Base" fill="#FFFFFF" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                        <g id="file-text" stroke-width="1" transform="translate(5.000000, 4.000000)" stroke="#262626" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8.5,0 L1.7,0 C0.761115925,0 0,0.761115925 0,1.7 L0,15.3 C0,16.2388841 0.761115925,17 1.7,17 L11.9,17 C12.8388841,17 13.6,16.2388841 13.6,15.3 L13.6,5.1 L8.5,0 Z" id="Path" stroke-width="1.6"></path>
+                            <polyline id="Path" stroke-width="1.6" points="8.5 0 8.5 5.1 13.6 5.1"></polyline>
+                            <path d="M7.83809524,8.01904762 C7.69289795,8.16717848 7.69289795,8.40425009 7.83809524,8.55238095 L8.44761905,9.16190476 C8.59574991,9.30710205 8.83282152,9.30710205 8.98095238,9.16190476 L10.4171429,7.72571429 C10.8093722,8.59248133 10.6236923,9.61156742 9.95096321,10.2842965 C9.27823408,10.9570257 8.25914799,11.1427055 7.39238095,10.7504762 L4.76,13.3828571 C4.44440871,13.6984484 3.93273414,13.6984484 3.61714286,13.3828571 C3.30155157,13.0672659 3.30155157,12.5555913 3.61714286,12.24 L6.24952381,9.60761905 C5.85729447,8.74085201 6.04297433,7.72176592 6.71570345,7.04903679 C7.38843258,6.37630766 8.40751867,6.1906278 9.27428571,6.58285714 L7.84190476,8.0152381 L7.83809524,8.01904762 Z" id="Path" transform="translate(7.000474, 9.999526) scale(1, -1) translate(-7.000474, -9.999526) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

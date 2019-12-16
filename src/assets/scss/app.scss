@@ -1,0 +1,64 @@
+// Override default variables before the import
+// Body
+$body-bg: #FCFDFE;
+$body-color: #2C2C2C;
+
+// Typography
+$font-family-sans-serif: 'Inter UI', sans-serif;
+$font-size-base: 0.875rem;
+$line-height-base: 1.6;
+
+// Spacing
+$sizes: (
+  20: 20%,
+  35: 35%,
+  45: 45%,
+  60: 60%,
+  80: 80%,
+);
+
+// Theme colors
+$theme-colors: (
+  "deansoft-primary": #639EFE,
+  "deansoft-secondary": #7E889C,
+  "deansoft-success": #55B79A,
+  "deansoft-info": #C3CFE2,
+  "deansoft-warning": #F5A623,
+  "deansoft-danger": #EB7557,
+  "deansoft-waiting": #F9977E,
+  "deansoft-base": #2C2C2C,
+  "deansoft-black": #262626,
+  "deansoft-secondary-black": #000
+);
+
+// Colors
+$lime: #74C021;
+$dark-blue: #233363;
+$line-gray: #EDF0F6;
+$box-gray: #E0E3E7;
+$table-color: #F7F7FB;
+$table-line: #E2E5F0;
+
+// Background Colors
+$deansoft-bg-default: #F3F5F9;
+$deansoft-bg-success: #E0F7F0;
+$deansoft-bg-info: #E0ECFF;
+$deansoft-bg-warning: #FDEDD3;
+$deansoft-bg-danger: #FEEAE5;
+$deansoft-bg-waiting: #F2E2E5;
+$deansoft-bg-facebook: #3F5C98;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    &:hover, &:active {
+      color: #fff!important;
+    }
+  }
+}
+
+// Import custom scss
+@import 'main.scss';
+@import 'utilities.scss';

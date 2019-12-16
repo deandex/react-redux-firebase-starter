@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="19px" viewBox="0 0 16 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 58 (101010) - https://sketch.com -->
+    <title>56CCA0AB-462D-4384-96AE-AB0D0E42960D</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="13.-Landing-page---Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.-Landing-page" transform="translate(-491.000000, -528.000000)">
+            <g id="Group-5" transform="translate(206.000000, 433.000000)">
+                <g id="Group-2-Copy-6" transform="translate(281.000000, 92.000000)">
+                    <g id="Icon-/-24px-/-Report">
+                        <rect id="Base" fill="#FFFFFF" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                        <g id="file-text" stroke-width="1" transform="translate(5.000000, 4.000000)" stroke="#262626" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8.5,0 L1.7,0 C0.761115925,0 0,0.761115925 0,1.7 L0,15.3 C0,16.2388841 0.761115925,17 1.7,17 L11.9,17 C12.8388841,17 13.6,16.2388841 13.6,15.3 L13.6,5.1 L8.5,0 Z" id="Path" stroke-width="1.6"></path>
+                            <polyline id="Path" stroke-width="1.6" points="8.5 0 8.5 5.1 13.6 5.1"></polyline>
+                            <path d="M10.2,9.35 L3.4,9.35" id="Path" stroke-width="1.6"></path>
+                            <path d="M10.2,12.75 L3.4,12.75" id="Path" stroke-width="1.6"></path>
+                            <polyline id="Path" stroke-width="1.6" points="5.1 5.95 4.25 5.95 3.4 5.95"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

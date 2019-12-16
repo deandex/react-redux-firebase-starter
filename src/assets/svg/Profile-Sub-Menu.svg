@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 58 (101010) - https://sketch.com -->
+    <title>D809C65A-E0FD-49BA-BBB8-C4AA4F1E3539</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="13.-Landing-page---Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.-Landing-page" transform="translate(-492.000000, -685.000000)">
+            <g id="Group-3" transform="translate(207.000000, 589.000000)">
+                <g id="Group-2" transform="translate(280.000000, 92.000000)">
+                    <g id="Icon-/-24px-/-Profile">
+                        <rect id="Base" fill="#FFFFFF" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                        <g id="users" stroke-width="1" transform="translate(6.000000, 5.000000)" stroke="#262626" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12.5925926,14.1666667 L12.5925926,12.5925926 C12.5925926,10.8539184 11.1831187,9.44444444 9.44444444,9.44444444 L3.14814815,9.44444444 C1.40947394,9.44444444 0,10.8539184 0,12.5925926 L0,14.1666667" id="Path" stroke-width="1.6"></path>
+                            <circle id="Oval" stroke-width="1.6" cx="6.2962963" cy="3.14814815" r="3.14814815"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

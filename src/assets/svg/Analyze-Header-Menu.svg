@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 58 (101010) - https://sketch.com -->
+    <title>0A25AC2E-B4AE-4BDC-9CBD-CE2B6341C8E7</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="13.-Landing-page---Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.-Landing-page" transform="translate(-222.000000, -449.000000)">
+            <g id="Group-5" transform="translate(206.000000, 433.000000)">
+                <g id="Group-Copy-2" transform="translate(16.000000, 16.000000)">
+                    <g id="Icon-/-36px-/-Revenue">
+                        <circle id="Oval" fill="#F7B500" opacity="0.16" cx="18" cy="18" r="18"></circle>
+                        <g id="percent" stroke-width="1" transform="translate(11.000000, 11.000000)" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13.125,0.875 L0.875,13.125" id="Path" stroke="#F7B500" stroke-width="1.6"></path>
+                            <circle id="Oval" stroke="#E6A800" stroke-width="1.6" cx="2.1875" cy="2.1875" r="2.1875"></circle>
+                            <circle id="Oval" stroke="#E6A800" stroke-width="1.6" cx="11.8125" cy="11.8125" r="2.1875"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
