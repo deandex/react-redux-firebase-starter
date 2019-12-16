@@ -1,6 +1,6 @@
 {
-  "name": "fundra-app",
-  "description": "Fundra web applications for nonprofit agent",
+  "name": "react-redux-starter",
+  "description": "React Redux Starter With Firebase",
   "author": "Noviandra Syahputra <andra.zone@gmail.com>",
   "version": "0.1.0",
   "private": true,
