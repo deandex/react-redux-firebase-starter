@@ -12,7 +12,9 @@ $line-height-base: 1.6;
 $sizes: (
   20: 20%,
   35: 35%,
+  40: 40%,
   45: 45%,
+  49: 49.5%,
   60: 60%,
   80: 80%,
 );
@@ -28,7 +30,15 @@ $theme-colors: (
   "deansoft-waiting": #F9977E,
   "deansoft-base": #2C2C2C,
   "deansoft-black": #262626,
-  "deansoft-secondary-black": #000
+  "deansoft-violet": #6324E8,
+  "deansoft-yellow": #F7A900,
+  "deansoft-green": #1DD189,
+  "deansoft-blue": #2431E8,
+  "deansoft-smoke": #5C6474,
+  "deansoft-secondary-black": #000,
+  "deansoft-secondary-danger": #E02020,
+  "deansoft-secondary-success": #1ABD7D,
+  "deansoft-secondary-warning": #E0961F
 );
 
 // Colors
@@ -36,15 +46,31 @@ $lime: #74C021;
 $dark-blue: #233363;
 $line-gray: #EDF0F6;
 $box-gray: #E0E3E7;
+$break-line: #EAEEF5;
 $table-color: #F7F7FB;
 $table-line: #E2E5F0;
+$table-hover: #F7F9FC;
+$table-header-color: #778093;
+$outline-danger: #D0021B;
+$outline-success: #1DD189;
+$outline-warning: #F5A623;
+$bullet-danger: #D0021B;
+$bullet-success: #1DD189;
+$bullet-warning: #F7B500;
+$bullet-info: #0091FF;
+$bullet-primary: #639EFE;
+$bullet-secondary: #C3CFE2;
+$bullet-violet: #6236FF;
 
 // Background Colors
 $deansoft-bg-default: #F3F5F9;
 $deansoft-bg-success: #E0F7F0;
+$deansoft-bg-secondary-success: #F6FDFA;
 $deansoft-bg-info: #E0ECFF;
 $deansoft-bg-warning: #FDEDD3;
+$deansoft-bg-secondary-warning: #FFFCF6;
 $deansoft-bg-danger: #FEEAE5;
+$deansoft-bg-secondary-danger: #FEF9F9;
 $deansoft-bg-waiting: #F2E2E5;
 $deansoft-bg-facebook: #3F5C98;
 
@@ -56,6 +82,26 @@ $deansoft-bg-facebook: #3F5C98;
     &:hover, &:active {
       color: #fff!important;
     }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .container {
+    &.wide {
+      max-width: 1280px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .chart-column {
+    height: 250px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .radial-chart-container {
+    height: 200px;
   }
 }
 

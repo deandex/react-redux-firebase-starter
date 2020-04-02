@@ -1,4 +1,7 @@
-import TableUI from './table';
-import UploadUI from './upload';
+import CustomToggleUI from './CustomToggle';
+import DropDownSelectUI from './DropdownSelect';
+import TableUI from './Table';
+import TotalRecordUI from './TotalRecord';
+import UploadUI from './Upload';
 
-export { TableUI, UploadUI };
+export { CustomToggleUI, DropDownSelectUI, TableUI, TotalRecordUI, UploadUI };

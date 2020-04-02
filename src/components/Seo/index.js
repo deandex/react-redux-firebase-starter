@@ -2,25 +2,44 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-function SEO({ description, lang, meta, keywords, title, image }) {
+import {
+  WEBSITE_TITLE,
+  WEBSITE_NAME,
+  WEBSITE_DESCRIPTION,
+  WEBSITE_KEYWORDS,
+  OPEN_GRAPH,
+  WEBFLOW_SITE,
+} from '../../global/environment';
+
+function SEO({ description, lang, html, meta, keywords, title, image }) {
   const site = {
     siteMetadata: {
-      title: process.env.REACT_APP_WEBSITE_TITLE,
-      name: process.env.REACT_APP_WEBSITE_NAME,
-      description: process.env.REACT_APP_WEBSITE_DESCRIPTION,
+      title: WEBSITE_TITLE,
+      name: WEBSITE_NAME,
+      description: WEBSITE_DESCRIPTION,
       author: `@deansofttechnology`,
-      keywords: ['fundra', 'gofundra', 'fundraising', 'campaign'],
-      image: process.env.REACT_APP_OPEN_GRAPH,
+      keywords: WEBSITE_KEYWORDS.split(','),
+      image: OPEN_GRAPH,
     },
   };
 
   const metaDescription = description || site.siteMetadata.description;
   const metaKeywords = [...site.siteMetadata.keywords, ...keywords];
   const metaImage = image || site.siteMetadata.image;
+  const htmlAttributes = { lang };
+  const scripts = [];
+
+  if (WEBFLOW_SITE !== undefined && WEBFLOW_SITE !== '') {
+    Object.assign(htmlAttributes, { 'data-wf-site': WEBFLOW_SITE });
+  }
+
+  if (html) {
+    Object.assign(htmlAttributes, html);
+  }
 
   return (
     <Helmet
-      htmlAttributes={{ lang }}
+      htmlAttributes={htmlAttributes}
       title={title}
       titleTemplate={`%s - ${site.siteMetadata.name} | ${site.siteMetadata.title}`}
       meta={[
@@ -46,7 +65,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
         },
         {
           property: `og:site_name`,
-          content: site.siteMetadata.title,
+          content: site.siteMetadata.name,
         },
         {
           property: `og:url`,
@@ -84,12 +103,14 @@ function SEO({ description, lang, meta, keywords, title, image }) {
           href: `${document.location.protocol}//${document.location.host}${document.location.pathname}`,
         },
       ]}
+      script={scripts}
     />
   );
 }
 
 SEO.defaultProps = {
   lang: `en`,
+  html: null,
   meta: [],
   keywords: [],
   description: ``,
@@ -99,6 +120,7 @@ SEO.defaultProps = {
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
+  html: PropTypes.instanceOf(Object),
   meta: PropTypes.arrayOf(PropTypes.object),
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,

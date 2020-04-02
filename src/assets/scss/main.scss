@@ -2,12 +2,11 @@
   margin-right: 16px;
   border-radius: 50%;
   background-color: $deansoft-bg-warning;
-  color: theme-color('fundra-warning') !important;
+  color: theme-color('deansoft-warning') !important;
   font-weight: 500;
 }
 
 .user-avatar {
-  margin-right: 16px;
   border-radius: 9999px;
   overflow: hidden;
 }
@@ -41,13 +40,10 @@
 .social-button {
   height: 52px;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
           justify-content: center;
 
   &.facebook {
@@ -57,7 +53,7 @@
 
   &.google {
     background-color: $white;
-    border: 1px solid theme-color("fundra-info");
+    border: 1px solid theme-color("deansoft-info");
   }
 
   &.facebook {
@@ -93,7 +89,7 @@
 }
 
 .navbar-top {
-  padding: 20px 40px;
+  padding: 10px 40px;
   border-bottom: 0.5px solid $line-gray;
 
   .navbar-brand {
@@ -135,19 +131,25 @@
 
   .nav-profile-menu {
     .user-avatar, .user-initial {
+      margin-right: 3px;
       width: 36px;
       height: 36px;
     }
 
-    .user-initial {
-      padding-left: 2px;
-    }
+    // .user-initial {
+    //   padding-left: 2px;
+    // }
 
     .label-name {
-      color: theme-color('fundra-black');
+      color: theme-color('deansoft-black');
       letter-spacing: .2px;
       line-height: 17px;
-      padding: 0 16px 0 0;
+      padding: 6px 16px 6px 13px;
+
+      &.hover {
+        background-color: rgba(245, 166, 35, 0.2);
+        border-radius: 50px;
+      }
     }
 
     .caret {
@@ -165,7 +167,7 @@
         }
 
         &:hover {
-          color: theme-color('fundra-primary');
+          color: theme-color('deansoft-primary');
           background-color: rgba(99,158,254,.16);
         }
       }
@@ -174,7 +176,8 @@
 }
 
 .main-container {
-  padding-top: $spacer * 7.5;
+  padding-top: $spacer * 6.5;
+  padding-bottom: $spacer * 3;
 }
 
 .login-container {
@@ -222,18 +225,37 @@
   }
 }
 
+.management-page {
+  min-height: 400px;
+}
+
 .dashboard-quote {
-  color: theme-color('fundra-black');
+  color: theme-color('deansoft-black');
   font-size: $font-size-base * 1.1;
   font-weight: 400;
   line-height: 19px;
+  height: 40px;
+
+  &.medium {
+    font-size: $font-size-base;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  &.small {
+    font-size: $font-size-base * 0.85;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 
 .dashboard-menu {
-  padding-top: $spacer * 3.5;
+  padding-top: $spacer * 2;
 
   .dashboard-menu-item {
-    height: 140px;
+    min-height: 140px;
     margin-top: 16px;
     margin-bottom: 16px;
 
@@ -279,17 +301,32 @@
       }
 
       .item-menu-icon {
+        position: relative;
         padding: 24px 0;
 
         a {
           padding: 7px 10px;
-          color: theme-color('fundra-black');
+          color: theme-color('deansoft-black');
           outline: none;
 
           &:hover {
-            color: theme-color('fundra-black');
+            color: theme-color('deansoft-black');
             border-radius: 4px;
           }
+        }
+
+        .overlay-upgrade {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background-color: #fff;
+          opacity: .6;
+          z-index: 1;
+        }
+
+        .disabled-link {
+          padding: 0px 10px;
+          cursor: default;
         }
 
         .menu-icon {
@@ -312,6 +349,7 @@
 
 .account-info {
   .user-initial, .user-avatar {
+    margin-right: 16px;
     width: 80px;
     height: 80px;
   }
@@ -327,7 +365,7 @@
   }
 
   .profile-location {
-    color: theme-color('fundra-black');
+    color: theme-color('deansoft-black');
   }
 }
 
@@ -336,13 +374,13 @@
 
   .nav-link {
     outline: none;
-    color: theme-color('fundra-base');
+    color: theme-color('deansoft-base');
     letter-spacing: 0.4px;
 
     &.active {
-      color: theme-color('fundra-primary');
+      color: theme-color('deansoft-primary');
       font-weight: 500;
-      border-bottom: 2px solid theme-color('fundra-primary');
+      border-bottom: 2px solid theme-color('deansoft-primary');
     }
 
     &.disabled {
@@ -374,7 +412,7 @@
 
   &.medium {
     width: 60%;
-    max-height: 160px;
+    height: 160px;
   }
 }
 
@@ -382,11 +420,11 @@
   border-right: 1px solid $box-gray;
 
   .nav-link {
-    color: theme-color('fundra-base');
+    color: theme-color('deansoft-base');
     outline: none;
 
     &.active {
-      color: theme-color('fundra-primary');
+      color: theme-color('deansoft-primary');
       font-weight: 500;
       border-radius: 4px;
       background-color: $deansoft-bg-info;
@@ -397,4 +435,310 @@
 .footer {
   letter-spacing: 0.1px;
   border-top-color: rgba(126, 136, 156, .15)!important;
+}
+
+.grant-card {
+  color: theme-color('deansoft-black');
+  height: 275px;
+  overflow: hidden;
+
+  &:hover {
+    scrollbar-color: #C3CFE2 #fff;
+    scrollbar-width: thin;
+    overflow: auto;
+  }
+
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #C3CFE2;
+    border-radius: 10px;
+  }
+
+  .grant-card-header {
+    font-size: $font-size-base * 0.98;
+    font-weight: 500;
+    margin-bottom: 2px;
+    width: 99%;
+
+    a {
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .grant-card-progress {
+    font-size: $font-size-base * 0.75;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+
+    &.danger {
+      background-color: #FEF8F9;
+      color: $outline-danger;
+    }
+
+    &.success {
+      background-color: rgba(29, 209, 137, 0.08);
+      color: theme-color('deansoft-secondary-success');
+    }
+
+    &.warning {
+      background-color: rgba(247, 181, 0, 0.08);
+      color: theme-color('deansoft-secondary-warning');
+    }
+
+    &.info {
+      background-color: $deansoft-bg-info;
+      color: theme-color('deansoft-primary');
+    }
+  }
+
+  .grant-card-label {
+    color: theme-color('deansoft-smoke');
+    font-size: $font-size-base * 0.75;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .grant-card-desc {
+    font-size: $font-size-base * 0.85;
+    padding-top: $spacer * 0.5;
+    padding-bottom: $spacer * 1.2;
+
+    .badge {
+      line-height: 1.6;
+      font-weight: normal;
+      padding: 0.2em 0.55em;
+    }
+
+    &.department {
+      font-size: $font-size-base * 1.15;
+    }
+  }
+}
+
+.back-button {
+  color: theme-color('deansoft-black');
+  font-weight: 500;
+
+  a {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    margin-left: -5px;
+  }
+}
+
+.image-mask {
+  background-size: 100%;
+  border: 2px solid #FFFFFF;
+  border-radius: 100%;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+  width: 32px;
+  height: 32px;
+
+  &.overlap {
+    margin-left: -10px;
+  }
+}
+
+.activities-block {
+  font-size: $font-size-base * 0.85;
+  letter-spacing: 0.2px;
+
+  .activities-spent-amount {
+    .progress {
+      height: 0.25rem;
+    }
+  }
+
+  .activities-block-evaluation {
+    color: theme-color('deansoft-black');
+    min-height: 250px;
+
+    .activities-block-evaluation-progress {
+      padding-top: $spacer * 0.4;
+
+      .progress {
+        height: 0.3rem;
+      }
+    }
+  }
+
+  .activities-block-note {
+    font-size: $font-size-base * 0.75;
+  }
+
+  .activities-block-tabs {
+    border-bottom: 1px solid $break-line;
+
+    .nav-link {
+      outline: none;
+      color: theme-color('deansoft-smoke');
+      padding: 0 1.7rem .3rem 0;
+
+      &:hover, &:focus {
+        border-color: transparent;
+      }
+
+      &.active {
+        color: theme-color('deansoft-black');
+        border-color: transparent transparent $break-line;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 24px;
+          height: 2px;
+          background-color: theme-color('deansoft-primary');
+          position: relative;
+          top: 5px;
+        }
+      }
+    }
+  }
+
+  .activities-block-label {
+    color: theme-color('deansoft-smoke');
+    font-size: $font-size-base * 0.75;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .activities-block-desc {
+    font-size: $font-size-base * 0.85;
+    padding-top: $spacer * 0.5;
+    padding-bottom: $spacer * 1.2;
+
+    &.no-top-pad {
+      padding-top: 0;
+    }
+
+    .badge {
+      font-weight: normal;
+      padding: 0.2em 0.9em 0.3em;
+      line-height: 1.6;
+    }
+
+    &.department {
+      font-size: $font-size-base * 1.15;
+      padding-bottom: 0;
+    }
+  }
+
+  .activities-block-chart {
+    height: 205px;
+    width: 650px;
+  }
+
+  .activities-chat-header {
+    .chat-header-day {
+      font-weight: 500;
+      color: #7E889C;
+      letter-spacing: 1px;
+    }
+
+    .chat-header-date {
+      letter-spacing: 0.5px;
+      font-size: $font-size-base * 0.75;
+      color: #778093;
+    }
+  }
+
+  .activities-chat-messages {
+    .own-message {
+      color: #fff;
+      background-color: #0000DE;
+      border-radius: 6px;
+    }
+
+    .oval {
+      background-size: 100%;
+      border-radius: 100%;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .activities-chat-input {
+    color: theme-color('deansoft-black');
+    outline: none;
+    border: none;
+  }
+
+  .activities-chat-input {
+    white-space: pre-wrap;
+  }
+}
+
+.activities-status-card {
+  margin-bottom: 20px;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  &:hover {
+    border: 1px solid #0000DE;
+    box-shadow: 0 14px 6px 0 rgba(0, 0, 222, 0.24);
+  }
+
+  .status-card-container {
+    padding: 0.7rem;
+
+    .action-button-card {
+      right: 10px;
+    }
+  }
+
+  .status-card-title {
+    font-size: $font-size-base * 0.85;
+    font-weight: 500;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+
+  .status-card-deadline {
+    font-size: $font-size-base * 0.75;
+  }
+
+  .status-card-department {
+    .badge {
+      font-size: $font-size-base * 0.75;
+      font-weight: normal;
+      padding: 0.2em 1.1em 0.4em;
+      line-height: 1.6;
+    }
+  }
+
+  .progress {
+    height: 0.25rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .navbar-top {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .activities-block {
+    .activities-block-chart {
+      width: 320px;
+    }
+  }
 }

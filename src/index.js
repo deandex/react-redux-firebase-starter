@@ -2,13 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
-import * as serviceWorker from './serviceWorker';
-
 import configureStore from './store';
-import App from './components/App';
-import Firebase, { FirebaseContext } from './components/Firebase';
+import Firebase, { FirebaseContext } from './hoc/Firebase';
 
-import './assets/scss/app.scss';
+import App from './components/App';
+import * as serviceWorker from './serviceWorker';
 
 const store = configureStore();
 
