@@ -1,3 +1,5 @@
+export const NODE_APP_ENV = process.env.NODE_ENV;
+export const CLIENT_NAME = process.env.REACT_APP_CLIENT_NAME;
 export const WEBSITE_TITLE = process.env.REACT_APP_WEBSITE_TITLE;
 export const WEBSITE_NAME = process.env.REACT_APP_WEBSITE_NAME;
 export const WEBSITE_DESCRIPTION = process.env.REACT_APP_WEBSITE_DESCRIPTION;

@@ -7,7 +7,7 @@ import { Dropdown, Nav, Navbar } from 'react-bootstrap';
 import * as ROUTES from '../../global/routes';
 import { FirebaseContext } from '../../hoc/Firebase';
 
-import FundraLogo from '../../assets/svg/logo-Fundra.svg';
+import DeansoftLogo from '../../assets/images/logo.png';
 import SearchIcon from '../../assets/svg/search-slim.svg';
 import NotificationIcon from '../../assets/svg/notifications-outline.svg';
 import CheveronDownIcon from '../../assets/svg/cheveron-down.svg';
@@ -111,7 +111,7 @@ const NavigationAuth = ({ authUser }) => {
             <div className="brand-name text-deansoft-base d-none d-md-block">{agency.name}</div>
           </div>
         ) : (
-          <img src={FundraLogo} alt="Logo" />
+          <img src={DeansoftLogo} alt="Logo" />
         )}
       </Navbar.Brand>
       <Nav className="ml-auto d-md-none flex-row">

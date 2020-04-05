@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
+import { CLIENT_NAME } from '../../global/environment';
 import { DateTimeUtils } from '../../utils';
 
 const Footer = ({ authUser }) => (authUser ? <FooterAuth /> : null);
@@ -14,7 +15,7 @@ function FooterAuth() {
 
   return (
     <div className="container border-top footer py-4 text-center text-deansoft-secondary">
-      {`© ${yearNow} Deansoft Technology. All rights reserved. Terms, conditions, features, availability, pricing, fees, service and support options subject to change without notice`}
+      {`© ${yearNow} ${CLIENT_NAME}. All rights reserved. Terms, conditions, features, availability, pricing, fees, service and support options subject to change without notice`}
     </div>
   );
 }
