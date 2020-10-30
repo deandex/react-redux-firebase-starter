@@ -23,7 +23,7 @@ const SignInPage = () => (
       <TopLogo />
       <div className="login-header mt-4">
         <h1>Welcome back</h1>
-        <div className="login-note text-deansoft-secondary">Just one minute away from experiencing Fundra!</div>
+        <div className="login-note text-deansoft-secondary">Just one minute away from experiencing This App!</div>
       </div>
       <div className="login-form">
         <div className="social-login">
